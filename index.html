@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Garden Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0b0b1a;
+      color: white;
+    }
+
+    .hero {
+      background: url("ADB-Sustainable-Food-S1.jpeg") no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .hero-image {
+      max-width: 350px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .button-group button {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button-group button:hover {
+      background-color: #3a3a5c;
+    }
+
+    .content-section {
+      display: none;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #a8e063;
+    }
+
+    h3, h4 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    img.section-image {
+      margin: 20px 0;
+      max-width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    blockquote {
+      margin: 10px 0;
+      padding-left: 15px;
+      border-left: 4px solid #a8e063;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="images/pixel-forge-sa.jpg" alt="Community Garden" class="hero-image">
+    <div class="pixel forge SA-content">
+      <h1>Investigation: Community Engagement On Food Security Through Garden Project</h1>
+      <div class="button-group">
+        <button onclick="showContent('home')"><span>HOME</span></button>
+        <button onclick="showContent('about')"><span>ABOUT</span></button>
+        <button onclick="showContent('research')"><span>RESEARCH</span></button>
+        <button onclick="showContent('readmore')"><span>READ-MORE</span></button>
+        <button onclick="showContent('statistics')"><span>VIEW STATISTICS</span></button>
+        <button onclick="showContent('calculate')"><span>CALCULATIONS</span></button>
+        <button onclick="showContent('recommendations')"><span>RECOMMENDATIONS</span></button>
+        <button onclick="showContent('references')"><span>REFERENCES</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME -->
+  <section id="home" class="content-section active">
+    <h2>Food Insecurity and Our Mission</h2>
+    <p>Food insecurity is a state where individuals or households lack reliable access to food with enough nutrition to meet their daily needs.</p>
+
+    <h3>Mission</h3>
+    <p>Our group developed a website to present our research on food security, with a focus on how food gardening can help communities like Buhle Park overcome hunger and poverty.</p>
+    <p>The site aims to share relevant and evidence-based insights gathered from both local and global sources to help achieve zero hunger and zero poverty.</p>
+
+    <h3>South Africa’s Food Security Challenge</h3>
+    <p>Food insecurity is one of South Africa’s most pressing challenges, ranking 59th globally among affected countries. Our findings highlight several contributing factors, including:</p>
+    <ul>
+      <li>Global warming</li>
+      <li>Economic decline</li>
+      <li>Viruses such as Covid-19, HIV, etc.</li>
+      <li>Unemployment</li>
+      <li>Rising food prices</li>
+      <li>Health issues</li>
+    </ul>
+
+    <h3>Exploring a Solution: Food Gardening</h3>
+    <p>In response, we explored the concept of food gardening as a practical and sustainable solution. Through extensive online research, we identified successful gardening projects and strategies that support our hypothesis. These findings are summarized and presented across different sections of our website using:</p>
+    <ul>
+      <li>CALCULATIONS</li>
+      <li>Videos</li>
+      <li>Websites</li>
+      <li>Search engines</li>
+    </ul>
+    <p>To showcase our proof of food gardening as a successful method to combat food security.</p>
+
+    <h3>A Tool for Action</h3>
+    <p>To enhance user engagement, we also designed a simple program that allows users to input details — such as available space or crop type — and receive calculated recommendations for starting their own garden. Through the use of coding languages such as:</p>
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Etc...</li>
+    </ul>
+    <p>This tool helps translate our research into actionable steps for real-world application.</p>
+  </section>
+
+    <!-- ABOUT -->
+  <section id="about" class="content-section">
+    <h2>About</h2>
+
+    <h3>1. Introduction</h3>
+    <p>Food security remains one of the most critical global challenges, particularly in developing countries such as South Africa. Many households face hunger and poverty due to limited access to affordable and nutritious food. The Food Security Through Garden Projects initiative aims to promote sustainable food production by encouraging communities to create, maintain, and expand food gardens.</p>
+
+    <p>This report demonstrates how information and communication technology (ICT) can be used to support food security. The project combines knowledge from Mathematics, Communication, Programming, and Computing Fundamentals to research, analyze, and design solutions that promote community food gardening. The group explored various community and school garden initiatives, analyzed their success factors, and developed recommendations supported by digital tools such as a website and Java-based calculations.</p>
+
+    <h3>2. Problem Statement</h3>
+    <p>Many communities struggle with limited food resources, lack of income, and poor nutrition. Commercial food prices continue to rise, while access to fresh produce decreases. To achieve food security, communities need to adopt affordable, sustainable solutions. Food gardens are an effective way to provide nutritious food, generate income, and reduce dependence on external markets.</p>
+
+    <p>However, the lack of knowledge, tools, and technological support often limits their effectiveness. This project investigates how ICT skills—especially data analysis, programming, and web development—can enhance community garden management and sustainability.</p>
+
+    <h3>3. Aim and Objectives</h3>
+    <p><strong>Aim:</strong> To use ICT knowledge and digital tools to promote and support food security through community-based garden projects.</p>
+
+    <p><strong>Objectives:</strong></p>
+    <ul>
+      <li>To research existing community and school food gardens in South Africa.</li>
+      <li>To identify variables influencing successful food gardening.</li>
+      <li>To use mathematical methods to analyze and plan garden productivity.</li>
+      <li>To develop simple Java programs to automate garden calculations.</li>
+      <li>To create a basic website presenting findings, recommendations, and resources for communities.</li>
+      <li>To demonstrate teamwork, communication, and the application of computing fundamentals throughout the project.</li>
+    </ul>
+
+    <h3>4. Methodology</h3>
+    <p>The group followed a structured process:</p>
+    <ul>
+      <li><strong>Research Phase:</strong> Internet searches were conducted to gather information from videos, websites, and articles about food gardens and sustainable agriculture practices.</li>
+      <li><strong>Analysis Phase:</strong> Key factors affecting food gardening were identified, such as soil type, space, water, cost, sunlight, fertilizer, and plant types.</li>
+      <li><strong>Mathematical Modelling:</strong> Formulas were created to estimate yield, fertilizer use, and spacing using real examples from community gardens.</li>
+      <li><strong>Programming Phase:</strong> A Java program was developed to calculate planting density, fertilizer requirements, and yield per square meter.</li>
+      <li><strong>Website Development:</strong> The group created a simple website using WordPress to present the project findings and recommendations.</li>
+      <li><strong>Presentation and Review:</strong> The group collaborated using Microsoft Teams and Google Drive to compile the report, design visuals, and prepare for oral presentation.</li>
+    </ul>
+
+    <h3>5. Findings and Discussion</h3>
+    <p>Research findings revealed that:</p>
+    <ul>
+      <li>Small community gardens can produce up to 40–60% of a family’s vegetable needs if managed efficiently.</li>
+      <li>Proper garden layout and plant spacing improve productivity and reduce waste.</li>
+      <li>Organic waste recycling and natural pest control improve soil health and reduce costs.</li>
+      <li>Access to online information helps gardeners learn and share best practices.</li>
+    </ul>
+
+    <p>Digital tools such as Excel, WordPress, and Java programs can make garden management easier. By integrating ICT into gardening, communities can track growth, plan resources, and share knowledge effectively.</p>
+
+    <h3>6. Mathematics Outcomes</h3>
+    <p>Mathematics provided the foundation for analyzing and managing garden resources. Through this project, students were able to:</p>
+    <ul>
+      <li>Identify key variables — such as garden area, number of plants, yield per square meter, water use, and fertilizer ratio.</li>
+      <li>Apply formulas and equations to determine planting density and resource needs.</li>
+    </ul>
+
+    <p><strong>Example:</strong></p>
+    <blockquote>
+      Yield (Y) = Plants × Yield per Plant<br>
+      Fertilizer per Plant = Total Fertilizer ÷ Number of Plants
+    </blockquote>
+
+    <ul>
+      <li>Use measurements and conversions to plan space efficiently.</li>
+      <li>Apply basic statistics to summarize and visualize findings using Excel charts and graphs.</li>
+      <li>Use logical reasoning to link mathematical models with programming statements.</li>
+    </ul>
+
+    <p>These skills helped the group quantify resources and make realistic recommendations.</p>
+
+    <h3>7. Communication Outcomes</h3>
+    <p>Communication was vital for collaboration and reporting. The group achieved:</p>
+    <ul>
+      <li>Effective teamwork through meetings and digital collaboration tools.</li>
+      <li>Clear written communication in reports, summaries, and progress updates.</li>
+      <li>Oral communication through PowerPoint presentations and discussions.</li>
+      <li>Academic writing following proper grammar, structure, and referencing.</li>
+      <li>Professional collaboration, ensuring that all group members contributed equally.</li>
+    </ul>
+
+    <p>Through this, students demonstrated leadership, listening, and presentation skills required for real-world ICT projects.</p>
+
+    <h3>8. Programming Outcomes</h3>
+    <p>Programming enabled automation of calculations and problem solving. Students:</p>
+    <ul>
+      <li>Designed pseudocode and flowcharts before coding.</li>
+      <li>Wrote a Java program to CALCULATIONS and resource use.</li>
+    </ul>
+
+    <p><strong>Example of pseudocode:</strong></p>
+    <blockquote>
+      Start<br>
+      Input number_of_plants<br>
+      Input yield_per_plant<br>
+      Compute total_yield = number_of_plants * yield_per_plant<br>
+      Display total_yield<br>
+      End
+    </blockquote>
+
+    <ul>
+      <li>Used if, switch, and loop structures to handle user choices.</li>
+      <li>Implemented input validation to ensure correct data entry.</li>
+      <li>Added comments and structured code for readability.</li>
+      <li>Integrated JavaScript and web content to make the project interactive.</li>
+    </ul>
+
+    <p>This demonstrated logical thinking, coding skills, and the ability to connect software with real community needs.</p>
+
+    <h3>9. Computing Outcomes</h3>
+    <p>Computing fundamentals were applied throughout the project. Students:</p>
+    <ul>
+      <li>Used Microsoft Word for report writing and documentation.</li>
+      <li>Used Excel to analyze data and generate charts on crop yield and cost efficiency.</li>
+      <li>Used PowerPoint for visual presentations.</li>
+      <li>Developed a website using WordPress to showcase research and recommendations.</li>
+      <li>Used GitHub and Google Drive for group collaboration and version control.</li>
+      <li>Applied cybersecurity awareness by protecting website content and sources.</li>
+    </ul>
+
+    <p>These computing skills ensured that the project was technically sound, professional, and collaborative.</p>
+
+    <h3>10. Conclusion</h3>
+    <p>This project successfully combined technology and sustainability to address the challenge of food insecurity. By applying skills from Mathematics, Communication, Programming, and Computing, the group learned to analyze, calculate, and present real-world data using ICT tools.</p>
+
+    <p>The project demonstrates that technology can play a major role in improving community food systems and achieving the Sustainable Development Goals of No Poverty and Zero Hunger. With continued effort and collaboration, food gardens can transform communities into self-reliant, sustainable environments.</p>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="content-section">
+    <h2>Research</h2>
+
+    <h3>Problem Domain</h3>
+    <p>Communities across South Africa and the world face the challenges of poverty and hunger. Food gardening provides a low-cost, sustainable solution to help reduce these issues. This project explores the influence of various environmental and logistical factors on food gardening and identifies alternatives to increase effectiveness, reduce cost, and promote community involvement.</p>
+
+    <h3>Background</h3>
+    <p>South Africa has a rich history in food gardens, considering the number of rural communities that exist in our country, which impeded the speed of urban development; thus, South Africa continues to be a developing country to date. Poverty and hunger continue to grow and become imminent in South Africa; therefore, the need to address food security and the promotion of sustainable practices is vital.</p>
+
+    <h3>Objective</h3>
+    <p>Our main objective in this project was to retrieve information about food garden cases in relation to how different types of households, educational institutions, and social responsibility community projects engage in food security through creating, maintaining, and improving gardening environments that produce fruits and vegetables.</p>
+
+    <h3>Description</h3>
+    <p>In our project aims, we had planned to lay out existing food gardens in South Africa in order to gather key aspects of gardening practices.</p>
+
+    <hr />
+
+    <h3>Food Garden Cases in South Africa</h3>
+
+    <h4>Community Garden Case</h4>
+    <p>The garden’s extensive role in social well-being, food security, economic and environmental development sustainability for a community on a large or small scale.</p>
+
+    <h4>School Garden Case</h4>
+    <p>The garden’s imperative role is to contribute to food and nutrition security for students. This type of garden case is important because it produces educational opportunities and improves students’ relationships with fresh produce and dietary choices.</p>
+
+    <h4>Home Garden Case</h4>
+    <p>The garden’s essential role in ameliorating household food production and nutrition. The exploration of challenges such as access to land and education levels hindering this type of case is also assessed.</p>
+
+    <hr />
+
+    <h3>Research Summary</h3>
+
+    <h4>A. Household Gardens in Cape Town</h4>
+    <ul>
+      <li><strong>Location:</strong> Informal settlements in Cape Town</li>
+      <li><strong>Summary:</strong> Families create backyard gardens using recycled containers.</li>
+      <li><strong>Outcome:</strong> Improved nutrition and self-sufficiency.</li>
+    </ul>
+
+    <h4>B. School Garden in Limpopo</h4>
+    <ul>
+      <li><strong>Location:</strong> Primary school in rural Limpopo</li>
+      <li><strong>Summary:</strong> Educators and learners plant and manage vegetables.</li>
+      <li><strong>Outcome:</strong> Enhances food supply for learners and practical life skills.</li>
+    </ul>
+
+    <h4>C. NGO Project: Food & Trees for Africa</h4>
+    <ul>
+      <li><strong>Description:</strong> National project supporting garden creation with training and mentorship.</li>
+      <li><strong>Outcome:</strong> Thousands of gardens created in underprivileged areas.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Food Garden Projects</h2>
+
+<div class="project">
+  <h3>1. Light From Africa</h3>
+  <p>Light From Africa operates Community Food Gardens in Suurbraak, Barrydale, and Buffeljags River to assist residents in supporting themselves by growing vegetables and developing skills to earn a living.</p>
+  <img src="images/africa.jpg" alt="Light From Africa Food Garden">
+  <p>3 Communities | 245 Households | 1060 Residents | 3 Schools | 530 Learners</p>
+</div>
+
+<div class="project">
+  <h3>2. Food & Trees for Africa</h3>
+  <p>Develops income-producing vegetable production initiatives suited to the South African landscape, including the Market Garden program that promotes community food gardens and smallholder farming using eco-friendly methods.</p>
+  <img src="images/food.jpeg" alt="Food & Trees for Africa Garden">
+</div>
+
+<div class="project">
+  <h3>3. The Ditshego Permaculture Garden</h3>
+  <p>Located in Centurion, Gauteng, this project by Ditshego House of Laughter supports 250 children in the Mooiplaas community, promoting health, unity, and self-reliance through shared food production.</p>
+  <img src="images/scaled.jpeg" alt="Ditshego Permaculture Garden">
+</div>
+
+<div class="project">
+  <h3>4. The Phumulani Agri-Village Food Garden</h3>
+  <p>Established by Exxaro in Mpumalanga to create new livelihoods for resettled households. Equipped with greenhouses and drip irrigation systems, it supplies local feeding schemes and retail stores.</p>
+  <img src="images/phumlani.jpg" alt="Phumulani Agri-Village Food Garden">
+</div>
+    <hr />
+
+    <h3>Ways to Improve/Integrate More Garden Products in South Africa</h3>
+
+    <h4>1. Prompting Indigenous & Climate-Smart Groups</h4>
+    <p>Encouraging indigenous planting ensures resilience to climate change and supports biodiversity. Access to indigenous seeds and soil enhancers is vital.</p>
+
+    <h4>2. Developing and Availing DIY Garden Kits</h4>
+    <p>Providing easy-to-use kits with simple instructions empowers individuals to start and maintain home or community gardens.</p>
+
+    <h4>3. Supporting Water-Saving Garden Technologies</h4>
+    <p>Introducing drip irrigation, soaker hoses, and self-watering containers ensures plants get adequate water while conserving resources.</p>
+
+    <hr />
+
+    <h3>Identified Variables and Parameters</h3>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Variable/Parameter</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Number of Participants (P)</td><td>People involved in the gardening project</td></tr>
+        <tr><td>Garden Space (S)</td><td>Total area available for planting (m²)</td></tr>
+        <tr><td>Water Availability (W)</td><td>Amount of water available per week (litres)</td></tr>
+        <tr><td>Sunlight Exposure (Sh)</td><td>Average hours of sunlight per day</td></tr>
+        <tr><td>Soil Type (T)</td><td>Type of soil used (loam, clay, sandy)</td></tr>
+        <tr><td>Total Cost (C)</td><td>Setup and ongoing costs in ZAR</td></tr>
+        <tr><td>Fertiliser Requirement (F)</td><td>Fertiliser needed per square meter</td></tr>
+        <tr><td>Pest Control Method (Pc)</td><td>1 = organic/natural, 0 = chemical</td></tr>
+        <tr><td>Recyclable Resources Used (R)</td><td>Use of recycled containers or compost</td></tr>
+        <tr><td>Estimated Yield (Y)</td><td>Projected harvest output (kg or number of plants)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- READ MORE -->
+  <section id="readmore" class="content-section">
+    <h2>Khayelitsha Community Garden in Cape Town, South Africa</h2>
+
+    <img src="images/garden-one.jpg" alt="Community Garden Research" class="section-image">
+
+    <p>A community-driven initiative enhancing food security and promoting sustainable gardening practices. This garden in Khayelitsha focuses on improving food access and soil quality through community collaboration, showcasing the impact of urban food gardening on local food security. The Khayelitsha garden demonstrates how community gardens can unite people to improve food security and gardening skills in urban settings.</p>
+
+    <p>The prevalence of food insecurity is not only a matter of hunger but also of malnutrition, as households often rely on cheaper, calorie-dense foods that lack essential nutrients. Sustainable, community-driven solutions such as community garden projects strengthen local food systems, provide fresh produce, and foster environmental and economic resilience.</p>
+
+    <h3>Types of Community Gardens</h3>
+
+    <h4>Home Gardens</h4>
+    <img src="images/school-garden.jpg" alt="School Gardens" class="section-image">
+    <p>Supplement household diets and reduce grocery costs.</p>
+
+    <h4>School Gardens</h4>
+    <img src="images/home-garden.jpg" alt="Home Gardens" class="section-image">
+    <p>Integrate agricultural education into curricula and provide meals for learners.</p>
+
+    <h4>Community Allotments</h4>
+    <img src="images/community-allotment.jpg" alt="Community Allotments" class="section-image">
+    <p>Multiple households share land and resources to produce food collectively.</p>
+
+    <h4>Urban Agriculture Projects</h4>
+    <img src="images/urban-agriculture.jpg" alt="Urban Agriculture Projects" class="section-image">
+    <p>Convert unused spaces into productive gardens, often linked with local markets.</p>
+
+    <p>Case studies from Gauteng, KwaZulu-Natal, and Limpopo highlight measurable benefits, though challenges remain—land disputes, water scarcity, limited agricultural inputs, and lack of training.</p>
+
+    <p>This research explores the relationship between food security and community gardening in South Africa and presents recommendations for scaling up garden projects nationwide. These initiatives promote self-reliance, resilience, and sustainable livelihoods.</p>
+  </section>
+
+  <!-- STATISTICS -->
+<section id="statistics" class="content-section">
+  <h2>Community Garden Statistics</h2>
+
+  <p>
+    According to <strong>Statistics South Africa (2023)</strong>, nearly 
+    <strong>19.7% of South African households</strong> experience moderate to severe food insecurity.
+    This means approximately <strong>3.5 million households</strong> face challenges accessing sufficient, nutritious food,
+    and around <strong>6.2 million individuals</strong> regularly go without adequate meals.
+  </p>
+
+  <p>
+    Community and school gardens play a vital role in addressing these challenges.
+    Data from the <strong>Food & Trees for Africa (2024)</strong> report shows that over 
+    <strong>1,200 active gardens</strong> nationwide now support more than 
+    <strong>45,000 households</strong> and <strong>250 schools</strong>.
+    Each community garden produces on average <strong>120–180 kilograms of vegetables per month</strong>,
+    helping reduce food expenses by up to <strong>30%</strong> per household.
+  </p>
+
+  <p>
+    In areas such as <strong>Buhle Park</strong>, <strong>Soweto</strong>, and <strong>Khayelitsha</strong>,
+    garden cooperatives have increased local vegetable supply by an estimated <strong>40%</strong>.
+    Studies indicate that <strong>65% of participating families</strong> report better nutrition and health,
+    and <strong>25% of gardens</strong> generate small income streams through local produce sales.
+  </p>
+
+  <p>
+    Environmental benefits are equally significant — community gardens improve soil quality,
+    reduce waste through composting, and lower carbon emissions. For every <strong>10m²</strong> of garden space,
+    about <strong>6 kg</strong> of organic waste is diverted from landfill monthly.
+  </p>
+
+  <p>
+    These statistics demonstrate how small-scale food gardens strengthen community resilience,
+    create employment opportunities, and support the <strong>UN Sustainable Development Goals (SDGs)</strong>:
+    <em>No Poverty (SDG 1)</em> and <em>Zero Hunger (SDG 2)</em>.
+  </p>
+
+  <!-- Chart 1: Beneficiaries -->
+  <h3>Beneficiaries / Households per Project</h3>
+  <canvas id="beneficiariesChart" width="400" height="200"></canvas>
+
+  <!-- Chart 2: Estimated Yields -->
+  <h3>Estimated Garden Yields (kg per month)</h3>
+  <canvas id="yieldChart" width="400" height="200"></canvas>
+
+  <!-- Chart 3: Focus Areas -->
+  <h3>Project Focus Areas</h3>
+  <canvas id="focusChart" width="400" height="200"></canvas>
+
+  <!-- Summary Table -->
+  <h3>National & Community Garden Overview</h3>
+  <table style="margin:20px auto; border-collapse:collapse; width:85%; text-align:center; color:white;">
+    <tr style="background-color:#1e1e2f;">
+      <th style="padding:10px; border:1px solid #555;">Indicator</th>
+      <th style="padding:10px; border:1px solid #555;">Value (2023–2025)</th>
+      <th style="padding:10px; border:1px solid #555;">Source</th>
+    </tr>
+    <tr>
+      <td style="padding:8px; border:1px solid #555;">Households facing food insecurity</td>
+      <td style="padding:8px; border:1px solid #555;">19.7%</td>
+      <td style="padding:8px; border:1px solid #555;">Stats SA, 2023</td>
+    </tr>
+    <tr>
+      <td style="padding:8px; border:1px solid #555;">Active community gardens nationwide</td>
+      <td style="padding:8px; border:1px solid #555;">1,200+</td>
+      <td style="padding:8px; border:1px solid #555;">Food & Trees for Africa, 2024</td>
+    </tr>
+    <tr>
+      <td style="padding:8px; border:1px solid #555;">Average monthly yield per garden</td>
+      <td style="padding:8px; border:1px solid #555;">120–180 kg</td>
+      <td style="padding:8px; border:1px solid #555;">FTFA Reports, 2024</td>
+    </tr>
+    <tr>
+      <td style="padding:8px; border:1px solid #555;">Reduction in food expenses per household</td>
+      <td style="padding:8px; border:1px solid #555;">Up to 30%</td>
+      <td style="padding:8px; border:1px solid #555;">Community Monitors, 2024</td>
+    </tr>
+    <tr>
+      <td style="padding:8px; border:1px solid #555;">Families reporting improved nutrition</td>
+      <td style="padding:8px; border:1px solid #555;">65%</td>
+      <td style="padding:8px; border:1px solid #555;">UN Food Security Review, 2024</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+// ===== Chart 1: Beneficiaries =====
+const ctx1 = document.getElementById('beneficiariesChart').getContext('2d');
+new Chart(ctx1, {
+  type: 'bar',
+  data: {
+    labels: ['Light From Africa', 'Food & Trees for Africa', 'Modulaqhowa', 'Ditshego', 'Phumlani'],
+    datasets: [{
+      label: 'Beneficiaries / Households',
+      data: [245, 120, 50, 250, 32],
+      backgroundColor: 'rgba(54, 162, 235, 0.7)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+      borderWidth: 1
+    }]
+  },
+  options: {
+    plugins: { 
+      title: { display: true, text: 'Beneficiaries Reached by Each Project', color: '#fff' }, 
+      legend: { labels: { color: '#fff' } } 
+    },
+    scales: { 
+      y: { beginAtZero: true, ticks: { color: '#fff' } },
+      x: { ticks: { color: '#fff' } }
+    }
+  }
+});
+
+// ===== Chart 2: Yields =====
+const ctx2 = document.getElementById('yieldChart').getContext('2d');
+new Chart(ctx2, {
+  type: 'line',
+  data: {
+    labels: ['Light From Africa', 'Food & Trees for Africa', 'Modulaqhowa', 'Ditshego', 'Phumlani'],
+    datasets: [{
+      label: 'Average Yield (kg per month)',
+      data: [180, 150, 80, 120, 60],
+      borderColor: 'rgba(75, 192, 192, 1)',
+      backgroundColor: 'rgba(75, 192, 192, 0.2)',
+      tension: 0.3,
+      fill: true
+    }]
+  },
+  options: {
+    plugins: { 
+      title: { display: true, text: 'Estimated Monthly Yields per Garden', color: '#fff' }, 
+      legend: { labels: { color: '#fff' } } 
+    },
+    scales: { 
+      y: { beginAtZero: true, ticks: { color: '#fff' } },
+      x: { ticks: { color: '#fff' } }
+    }
+  }
+});
+
+// ===== Chart 3: Focus Areas =====
+const ctx3 = document.getElementById('focusChart').getContext('2d');
+new Chart(ctx3, {
+  type: 'pie',
+  data: {
+    labels: ['Nutrition', 'Education', 'Economic Empowerment', 'Environmental Sustainability'],
+    datasets: [{
+      data: [30, 20, 25, 25],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.8)',
+        'rgba(255, 206, 86, 0.8)',
+        'rgba(75, 192, 192, 0.8)',
+        'rgba(153, 102, 255, 0.8)'
+      ],
+      borderColor: '#fff',
+      borderWidth: 2
+    }]
+  },
+  options: {
+    plugins: { 
+      title: { display: true, text: 'Project Focus Areas (Percentage)', color: '#fff' },
+      legend: { position: 'bottom', labels: { color: '#fff' } }
+    }
+  }
+});
+</script>
+  </section>
+
+  <section id="calculate" class="content-section">
+  <div class="card">
+    <h2>Garden Calculations</h2>
+    <p>Enter your data below to calculate garden yield, water use, and other parameters.</p>
+
+    <table border="1" cellpadding="10" cellspacing="0" style="width:100%; background-color:#111; color:white; border-radius:8px;">
+      <tr><th>Parameter</th><th>Symbol</th><th>Value</th><th>Unit</th></tr>
+      <tr><td>Garden Space</td><td>S</td><td><input type="number" id="space" placeholder="e.g. 20"></td><td>m²</td></tr>
+      <tr><td>Plant Density</td><td>D</td><td><input type="number" id="density" placeholder="e.g. 4"></td><td>plants/m²</td></tr>
+      <tr><td>Water per Plant</td><td>W/p</td><td><input type="number" id="waterPerPlant" placeholder="e.g. 2.5"></td><td>litres/week</td></tr>
+      <tr><td>Fertilizer Rate</td><td>F</td><td><input type="number" id="fertilizer" placeholder="e.g. 0.3"></td><td>kg/m²</td></tr>
+      <tr><td>Yield per Plant</td><td>Y/p</td><td><input type="number" id="yieldPerPlant" placeholder="e.g. 1.2"></td><td>kg</td></tr>
+      <tr><td>Tool Cost</td><td>C_tools</td><td><input type="number" id="tools" placeholder="e.g. 300"></td><td>R</td></tr>
+      <tr><td>Soil Cost</td><td>C_soil</td><td><input type="number" id="soil" placeholder="e.g. 150"></td><td>R</td></tr>
+      <tr><td>Seed Cost</td><td>C_seeds</td><td><input type="number" id="seeds" placeholder="e.g. 100"></td><td>R</td></tr>
+      <tr><td>Water Cost</td><td>C_water</td><td><input type="number" id="waterCost" placeholder="e.g. 80"></td><td>R</td></tr>
+      <tr><td>Fertilizer Cost</td><td>C_fertilizer</td><td><input type="number" id="fertCost" placeholder="e.g. 60"></td><td>R</td></tr>
+    </table>
+
+    <button onclick="calculateGarden()" style="margin-top:15px; padding:10px 20px; background:#4CAF50; border:none; border-radius:8px; color:white; font-weight:bold; cursor:pointer;">
+      Calculate Results
+    </button>
+
+    <h3 style="margin-top:20px;">Results</h3>
+    <p><strong>A.</strong> Number of Plants (N) = <span id="resultA">0</span></p>
+    <p><strong>B.</strong> Total Water (W) = <span id="resultB">0</span> litres/week</p>
+    <p><strong>C.</strong> Total Fertilizer = <span id="resultC">0</span> kg</p>
+    <p><strong>D.</strong> Total Cost = R<span id="resultD">0</span></p>
+    <p><strong>E.</strong> Total Yield (Y) = <span id="resultE">0</span> kg</p>
+  </div>
+</section>
+
+<script>
+function calculateGarden() {
+  const S = parseFloat(document.getElementById('space').value) || 0;
+  const D = parseFloat(document.getElementById('density').value) || 0;
+  const Wp = parseFloat(document.getElementById('waterPerPlant').value) || 0;
+  const F = parseFloat(document.getElementById('fertilizer').value) || 0;
+  const Yp = parseFloat(document.getElementById('yieldPerPlant').value) || 0;
+
+  const C_tools = parseFloat(document.getElementById('tools').value) || 0;
+  const C_soil = parseFloat(document.getElementById('soil').value) || 0;
+  const C_seeds = parseFloat(document.getElementById('seeds').value) || 0;
+  const C_water = parseFloat(document.getElementById('waterCost').value) || 0;
+  const C_fertilizer = parseFloat(document.getElementById('fertCost').value) || 0;
+
+  // Formulas
+  const N = S * D;
+  const TotalW = N * Wp;
+  const TotalFert = S * F;
+  const TotalCost = C_tools + C_soil + C_seeds + C_water + C_fertilizer;
+  const Y = N * Yp;
+
+  // Display
+  document.getElementById('resultA').textContent = N.toFixed(2);
+  document.getElementById('resultB').textContent = TotalW.toFixed(2);
+  document.getElementById('resultC').textContent = TotalFert.toFixed(2);
+  document.getElementById('resultD').textContent = TotalCost.toFixed(2);
+  document.getElementById('resultE').textContent = Y.toFixed(2);
+}
+</script>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section id="recommendations" class="content-section">
+    <h2>Recommendations</h2>
+    <ul>
+      <li>Encourage communities to start small household gardens using recycled containers.</li>
+      <li>Promote water-efficient irrigation techniques like drip systems.</li>
+      <li>Provide training and workshops for urban and rural residents on sustainable gardening.</li>
+      <li>Partner with schools and NGOs to support long-term food garden programs.</li>
+      <li>Encourage municipalities to allocate unused land for community gardens.</li>
+      <li>Communities establish food garden networks supported by local municipalities and schools.</li>
+      <li>Training workshops on gardening and technology integration be conducted.</li>
+      <li>Recycling and composting programs be encouraged to reduce waste and improve soil health.</li>
+      <li>Schools include ICT-based agriculture projects in their curriculum.</li>
+      <li>Government and NGOs support community gardens with tools, seeds, and digital resources.</li>
+      <li>Community websites should be created to share experiences, track progress, and promote collaboration.</li>
+    </ul>
+  </section>
+
+    </ul>
+  </section>
+
+  <!-- REFERENCES -->
+  <section id="references" class="content-section">
+    <h2>References</h2>
+    <ul>
+      <li>Jan, M. (2023). <i>Exploring the role of community gardens in addressing food insecurity.</i> Retrieved from <a href="https://geography.nmsu.edu/masters-program/M_Djan_Final%20.804523/full" target="_blank">geography.nmsu.edu</a></li>
+      <li>Ojo, T. O. (2024). <i>Analysis of the Contribution of Home Gardens to Household Food Security.</i> Retrieved from <a href="https://www.mdpi.com/2071-1050/16/6/2525" target="_blank">mdpi.com</a></li>
+      <li>Kanosvamhira, T. P. (2025). <i>Unveiling the potential of school-based community gardens to foster food security.</i> Retrieved from <a href="https://urbantransformations.biomedcentral.com/articles/10.1186/s42854-024-00069-z" target="_blank">urbantransformations.biomedcentral.com</a></li>
+      <li>Toit, M. J. D. (2022). <i>Why Home Gardens Fail in Enhancing Food Security and Dietary Diversity.</i> Retrieved from <a href="https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2022.804523/full" target="_blank">frontiersin.org</a></li>
+      <li>Statistics South Africa. (2023). <i>Food security in South Africa.</i> Retrieved from <a href="https://www.statssa.gov.za/publications/P0318/P03182023.pdf" target="_blank">statssa.gov.za</a></li>
+      <li>Community Monitors. (2024). <i>Vukani Environmental Movement Garden Project.</i> Retrieved from <a href="https://communitymonitors.net" target="_blank">communitymonitors.net</a></li>
+      <li>Vukani Environmental Justice Movement. (2024). <i>Facebook Page.</i> Retrieved from <a href="https://facebook.com/vejma" target="_blank">facebook.com/vejma</a></li>
+      <li>Shoprite Act for Change. (2025). Retrieved from <a href="https://www.shopriteholdings.co.za" target="_blank">shopriteholdings.co.za</a></li>
+      <li>Spring of Hope. (2024). <i>Permaculture in Mpumalanga.</i> Retrieved from <a href="https://aspringofhope.org" target="_blank">aspringofhope.org</a></li>
+      <li>Van der Merwe, D. (2018). <i>Sugar Cane: A Key to Food Security in South Africa.</i> Cape Town: Academic Press.</li>
+    </ul>
+  </section>
+
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    function calcYield() {
+      const area = document.getElementById('area').value;
+      const yieldPerSqm = 2.5;
+      const result = area * yieldPerSqm;
+      document.getElementById('result').textContent = "Estimated yield: " + result.toFixed(2) + " kg of vegetables.";
+    }
+  </script>
+</body>
+</html>
